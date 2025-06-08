@@ -1,0 +1,14 @@
+{
+  "Name": "CustomVMReader",
+  "IsCustom": true,
+  "Description": "Can view virtual machines only",
+  "Actions": [
+    "Microsoft.Compute/virtualMachines/read"
+  ],
+  "NotActions": [],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/<your-subscription-id>"
+  ]
+}

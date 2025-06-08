@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "displayName": "Deny resources outside East US",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy denies the creation of resources outside the East US region.",
+    "policyRule": {
+      "if": {
+        "field": "location",
+        "notEquals": "eastus"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  }
+}
